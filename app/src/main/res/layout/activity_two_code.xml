@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_two_code"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.classcircle.activity.TwoCodeActivity">
+    <include layout="@layout/layout_headed"
+             android:id="@+id/title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/id_twoCode_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/weather"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/id_twoCode_tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15软件2班"
+            android:textSize="16sp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/id_twoCode_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create time:2017-8-9"
+            android:textSize="16sp"
+
+            android:textColor="@color/item_text_02"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/id_twoCode_img_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/weather"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_scanme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫一扫上面的二维码加入我们的班级"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/item_text_02"/>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/show_file_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:paddingRight="38dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:maxEms="27"
+            android:id="@+id/show_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asfas498asdfasdasfsfsafasdfasfsdfasdfasfdasdfsafasdf4984.jpg"
+            android:textColor="@color/item_text_01"
+            android:textSize="18sp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/show_file_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自  "
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+
+            android:id="@+id/show_file_uploadName"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/show_file_from"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a001"/>
+        <TextView
+            android:id="@+id/show_file_time"
+            android:text="7-8 12:20"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/linear_02"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.classcircle.activity.CreateClassActivity">
+
+    <Button
+        android:layout_marginTop="150dp"
+android:text="创建班级"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/create_class"
+        android:layout_width="170dp"
+        android:textSize="20sp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg_normal"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="加入班级"
+        android:textSize="20sp"
+        android:id="@+id/join_class"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg_normal"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_collect_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.classcircle.activity.CollectDataActivity">
+    <include layout="@layout/layout_headed"/>
+    <EditText
+
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="选择文件"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/collect_data_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:background="@drawable/text_area"/>
+    <Button
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/collect_data_btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/collect_data_btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>

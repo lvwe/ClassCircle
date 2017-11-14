@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">班圈</string>
+    <string name="vote">投票</string>
+    <string name="classCircle">班圈</string>
+    <string name="my">我的</string>
+    <string name="card">我的班圈名片</string>
+    <string name="notice">公告</string>
+
+    <string name="name">班圈</string>
+
+    <string name="file">文件</string>
+    <string name="album">相册</string>
+    <string name="more">更多</string>
+    <string name="user_name">用户名</string>
+    <string name="user_password">密码</string>
+    <string name="login">登录</string>
+
+    <string name="str_has_selected_detail">已选(%d)</string>
+    <string name="str_has_selected">已选(0)</string>
+    <string name="str_selected_file_info_detail">{count}个文件共{size}</string>
+    <string name="str_cancel">取消</string>
+
+    <string-array name="array_res">
+        <item>应用</item>
+        <item>图片</item>
+        <item>音乐</item>
+        <item>视频</item>
+    </string-array>
+</resources>

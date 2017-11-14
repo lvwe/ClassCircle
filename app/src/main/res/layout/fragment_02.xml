@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:id="@+id/fragment02_linearLayout"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/f2_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/f2_img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/weather"
+            />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/f2_img_top"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/di"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/f2_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="15软件2班...."
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/f2_class_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="123456789.."
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/f2_two_code"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/er3"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/f2_linearLayout_marquee"
+        android:layout_width="match_parent"
+        android:background="@color/linear_02"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/left_laba"/>
+        <TextView
+            android:id="@+id/f2_marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center"
+            android:text="大 家 好 快 去 看 看 其 他 内 容 吧,大 家 好 快 去 看 看 其 他 内 容 吧"
+            android:gravity="center"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:textIsSelectable="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_laba"/>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_select_function"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/linear_01"/>
+
+    <RelativeLayout
+        android:id="@+id/f2_my_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/card"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/f2_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="吕文闯"
+            />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_lineae_view"></include>
+
+    <RelativeLayout
+        android:id="@+id/f2_group_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/group"/>
+
+        <ImageView
+            android:id="@+id/f2_img_first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/f2_img_sec"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/f2_count_of_class_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+
+            android:id="@+id/arrow2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_lineae_view"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyeclerview_content"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_content"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="10"
+                android:background="@null"
+                android:focusable="true"
+                android:hint="编辑信息"
+                android:textAlignment="center" />
+
+            <Button
+
+                android:id="@+id/btn_sendMsg"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:text="发送" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

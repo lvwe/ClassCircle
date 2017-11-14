@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_notice_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.administrator.classcircle.activity.ShowNoticeInfoActivity">
+
+    <include layout="@layout/layout_headed"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/show_notice_info_TvNotice"
+            android:textColor="@color/item_text_01"
+            android:text="2016年8月16日 群公告"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/show_notice_info_TvName"
+
+                android:text="a001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:id="@+id/show_notice_info_TvTime"
+            android:layout_toRightOf="@+id/show_notice_info_TvName"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/item_text_02"
+            android:layout_height="wrap_content"
+            android:text="9月18日 12:02"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linear_01"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/show_notice_info_TvContent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/show_notice_info_BtnDownload"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:text="下载附件"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

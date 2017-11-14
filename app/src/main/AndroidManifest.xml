@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.administrator.classcircle">
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_main"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoTitle">
+        <receiver
+            android:name=".BroadcastReceiver.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.administrator.classcircle.MY_MODIFY_CARD_BROAD"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1150161228115620#classcircle"/>
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"/>
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TwoCodeActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.NoticeActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.ModifyMyClassCardActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.MyClassMemberActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.ShowNoticeActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.ShowNoticeInfoActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.ShowFileActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity android:name=".activity.PreviewFileActivity">
+        </activity>
+        <activity android:name=".activity.CollectDataActivity">
+        </activity>
+        <activity android:name=".activity.ShowImgFileActivity">
+        </activity>
+        <activity
+            android:name=".activity.ShowVideoFileActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
+        <activity
+            android:name=".activity.ShowOtherFileActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activity.ChooseFileActivity"
+            android:theme="@style/AppTheme.ImageTranslucentTheme">
+        </activity>
+        <activity android:name=".li.CreateClassActivity"/>
+        <activity
+            android:name=".li.AddClass"
+            android:theme="@style/NewDetailActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".ZxingDependence.CaptureActivity"/>
+        <activity
+            android:name=".li.ClassZxingActivity"
+            android:theme="@style/NewDetailActivity"/>
+        <activity
+            android:name=".li.JoinActivity"
+            android:theme="@style/NewDetailActivity"/>
+        <activity
+            android:name=".li.AlbumActivity"
+            android:theme="@style/NewDetailActivity"/>
+        <activity
+            android:name=".li.ShowImageActivity"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <!-- <receiver -->
+        <!-- android:name=".activity.JoinActivity$MyBroadcastRecevier" -->
+        <!-- android:enabled="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="to.showimageactivity" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".li.VoteDetailActivity"
+            android:theme="@style/NewDetailActivity"/>
+        <activity android:name=".li.showTextzxingContentActivity"/>
+        <activity android:name=".li.ChooseActivity"/>
+        <activity android:name=".li.ActivityList"/>
+        <activity android:name=".li.ActivityDetailPager"/>
+        <activity android:name=".li.ChatActivity"/>
+    </application>
+
+</manifest>

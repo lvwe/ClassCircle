@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/item_text_01"
+        android:id="@+id/list_classImg"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/weather"/>
+    <RelativeLayout
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/list_className"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="swxg"
+            android:textSize="20sp"
+            android:textColor="@color/item_text_01"/>
+        <TextView
+            android:id="@+id/list_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="00:00:12"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/list_voteNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6M"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.administrator.classcircle.widget.HorizontalProgressBarWithNumber
+        android:id="@+id/myProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_weight="16"
+        android:max="100"
+        android:layout_marginLeft="10dp"
+
+        my:progress_unreached_color="#CCCCCC"
+        my:progress_unreached_bar_height="3dp"
+        my:progress_reached_color="#1bd1a5"
+        my:progress_text_size="20sp"
+        my:progress_text_color="#7fecad"
+        android:layout_height="wrap_content"
+        my:progress_reached_bar_height="3dp"
+        android:layout_marginBottom="5dp"
+
+        />
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:text="880"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

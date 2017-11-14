@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="item_text_01">#ff333333</color>
+    <color name="item_text_02">#ff9B9B9B</color>
+
+    <color name="tab_text_checked">#f00</color>
+    <color name="tab_text_normal">#ABABAB</color>
+
+    <color name="linear_01">#D0D0D0</color>
+
+    <color name="linear_02">#F0F0F0</color>
+    <color name="red">#FFFF0000</color>
+
+
+    <color name="theme_blue">#4088e0</color>
+    <color name="colorAccent2">#ff5562</color>
+    <color name="theme_blue2">#944083e0</color>
+
+    <color name="linear_04">#0000FF</color>
+    <color name="linear_05">#4682B4</color>
+
+    <color name="colorPrimary2">#1467CD</color>
+
+
+    <color name="black">@android:color/black</color>
+    <color name="darker_gray">@android:color/darker_gray</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent_white">#44ffffff</color>
+
+    <color name="holo_blue_light">@android:color/holo_blue_light</color>
+    <color name="hole_gray_blue">#cc81d4fa</color>
+
+    <color name="color_device">#5496E9</color>
+    <color name="color_file">#D6B02E</color>
+    <color name="color_storage">#11DE0A</color>
+    <color name="color_default_bg">#F2F2F2</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="color_yellow">#d5de85</color>
+    <color name="holo_gray_blue">#cc81d4fa</color>
+
+</resources>

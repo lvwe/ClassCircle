@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.classcircle.activity.ChooseActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/activity_01"
+        android:id="@+id/activity_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+<EditText
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:id="@+id/activity_title"
+    android:hint="活动主题"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/activity_name"
+        android:hint="活动名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/activity_explain"
+        android:hint="活动说明"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+       android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/activity_class"
+        android:hint="发起班级"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+
+<Button
+    android:layout_alignParentBottom="true"
+    android:text="提交"
+    android:id="@+id/activity_submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

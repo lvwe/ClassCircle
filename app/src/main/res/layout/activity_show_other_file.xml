@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_other_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.administrator.classcircle.activity.ShowOtherFileActivity">
+
+    <include layout="@layout/layout_loading_progress"
+        android:id="@+id/show_other_file_loading"/>
+    <include layout="@layout/layout_headed"/>
+    <RelativeLayout
+        android:layout_above="@id/show_other_file_loading"
+        android:id="@+id/show_file_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:textColor="@color/item_text_01"
+        android:textSize="16sp"
+        android:id="@+id/show_other_file_headName"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a001"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="%s上传"
+            android:id="@+id/show_other_file_time"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/show_other_file_fileImg"
+        android:src="@drawable/file_pdf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/show_other_file_fileName"
+        android:textColor="@color/item_text_01"
+        android:textSize="20sp"
+        android:layout_marginTop="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phfwenjian.pdf"/>
+    <TextView
+        android:id="@+id/text_not_preview"
+        android:textColor="@color/item_text_02"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="该文件不支持预览，请下载原文件查看。"/>
+
+    <Button
+        android:id="@+id/show_file_button"
+        android:textSize="18sp"
+        android:layout_marginTop="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="下载文件"/>
+        <Button
+            android:id="@+id/preview_file"
+            android:textSize="18sp"
+            android:layout_marginTop="450dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="预览"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.example.administrator.classcircle.activity.ActivityList">
+    <TextView
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+       android:textSize="20sp"
+        android:text="活动列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/activity_spriView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="#fff"
+            android:id="@+id/activity_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+</LinearLayout>
